@@ -11,14 +11,14 @@ public class ProxyTest {
 		//FolderProxy folderProxy=new FolderProxy(user);
 		
 		System.out.println("When userName and password are correct:");
-		IFolder folder=new FolderProxy(user.getUserName(),user.getPassword());
+		new FolderProxy(user.getUserName(),user.getPassword());
 		
 		System.out.println("**************************************");
 
 		// if we give wrong userName and Password
 		User userWrong=new User("abc","abc");
 		System.out.println("When userName and password are incorrect:");
-		folder=new FolderProxy(userWrong.getUserName(),userWrong.getPassword());
+		new FolderProxy(userWrong.getUserName(),userWrong.getPassword());
 		
 	}
 
